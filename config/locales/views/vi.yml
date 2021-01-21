@@ -1,0 +1,495 @@
+vi:
+  my_page: Trang của tôi
+  sign_out: Đăng xuất
+  search: Tìm kiếm
+  views:
+    pagination:
+      next: Tiếp
+      last: Cuối
+      previous: Trước
+      first: Đầu tiên
+  account: Tài khoản
+  law_firm: Văn phòng luật
+  dictionary:
+    submit: &submit Hoàn thành
+    active: &active Hoạt động
+    block: &block Khóa
+    name: &name Tên
+    email: &email Email
+    is_active: &is_active Đang hoạt động
+    action: &action Hành động
+    address: &address Địa chỉ
+    title: &title Tiêu đề
+    delete: &delete Xóa
+    content: &content Nội dung
+    total_vote: &total_vote Hữu ích
+    author: &author Tác giả
+    recommend_lawyers: &recommend_lawyers Luật sư khuyến nghị
+    article: &article Bài viết
+    answer: &answer Câu trả lời
+    question: &question Câu hỏi
+    popular_tags: &popular_tags Thẻ phổ biển
+    top_month: &top_month Nổi bật trong tháng
+    confirm_delete: &confirm_delete Bạn chắc chắn muốn xoá?
+  layouts:
+    admins:
+      navigator:
+        approve: Luật sư
+        not_approve: Luật sư mới đăng ký
+        law_firm: Văn phòng luật
+        user: Người dùng
+        article: Bài viết
+        question: Câu hỏi
+        answer: Câu trả lời
+    lawyers:
+      lawyer_navigator:
+        article: Bài viết
+        notification: Thông báo
+        history_advertise: Quảng cáo
+        law_firm: Văn phòng luật
+        account: Tài khỏan
+        request_law_firm: Yêu cầu tham gia văn phòng luật
+        law_firm_member: Thành viên văn phòng luật
+        law_fim_invitation: Lời mời của văn phòng luật
+        draft: Bản nháp
+        clips: Bài viết đã ghim
+        lawyer_profile: Thông tin luật sư
+        follow_categories: Lĩnh vực theo dõi
+    shared:
+      login_buttons:
+        sign_in: Đăng nhập
+        sign_up: Đăng ký
+      account_buttons:
+        my_page: Trang cá nhân
+    users:
+      user_navigator:
+        Questions: Câu hỏi
+        clips: Các bài đã ghim
+        account: Thông tin tài khoản
+        register_lawyer: Đăng kí thành luật sư
+        follow_categories: Lĩnh vực theo dõi
+  lawyer_profiles:
+    reviews:
+      input_review: Nhập đánh giá của bạn
+      submit: Lưu nhận xét
+    lawyer_info:
+      name: Tên luật sư
+      lawyer_id: Số thẻ
+      address: Địa chỉ
+      phone_number: Số điện thoại
+      fax_number: Số fax
+      law_firm_name: Văn phòng luật
+  follows:
+    follow_categories:
+      index:
+        first_follow: Theo dõi lĩnh vực bạn quan tâm để nhận được những câu hỏi và bài viết mới nhất
+        next: Tiếp theo
+  questions:
+    index:
+      popular_tag: *popular_tags
+      top_month: *top_month
+      questions: *question
+    form:
+      create_comment_box: Nhập bình luận của bạn
+      submit: Tạo bình luận
+    show:
+      answer: *answer
+      question: *question
+      related_question: Câu hỏi liên quan
+      popular_tags: *popular_tags
+      create_answer_box: Nhập câu trả lời của bạn
+      submit: Tạo câu trả lời
+    answer:
+      update_answer: Cập nhật câu trả lời
+      create_comment: Tạo bình luận
+      hide_show_comment: Ẩn/Hiện bình luận
+  articles:
+    _article:
+      show: Chưng bày
+    index:
+      article: Bài viết
+      new: Tạo mới
+      title: Tiêu đề
+      content: Nội dung
+      category_name: Tên danh mục
+      tag_list: Danh sách thẻ
+      status: Trạng thái
+      total_vote: *total_vote
+      action: Hành động
+      edit: Sửa
+      destroy: Phá hủy
+    show:
+      title: Tiêu đề
+      content: Nội dung
+      category_name: Tên danh mục
+      tag_list: Danh sách thẻ
+      status: Trạng thái
+      total_vote: *total_vote
+      action: Hành động
+      edit: Trạng thái
+      destroy: Phá hủy
+      author: *author
+      article: *article
+      recommend_lawyers: *recommend_lawyers
+      comment: Bình luận
+    recommend:
+      related: Cùng chủ đề
+      from_author: Cùng tác giả
+  top_pages:
+    search: Tìm kiếm
+    index:
+      top_page: "Đây là trang đầu"
+      popular_tag: *popular_tags
+      top_month: *top_month
+      article: *article
+  user:
+    questions:
+      new:
+        new_question: Tạo câu hỏi
+      form:
+        title: Tiêu đề
+        content: Nội dung
+        category: Lĩnh vực
+        tag_list: Gắn thẻ
+        submit: Hoàn thành
+      edit:
+        edit_question: Sửa câu hỏi
+        submit: *submit
+      index:
+        content: Nội dung
+        title: Tiêu đề
+        action: Hành động
+        new: Tạo câu hỏi mới
+        questions: Tất cả các câu hỏi
+        create_new_question: Tạo một câu hỏi mới
+        new_question: Tạo mới
+      question:
+        confirm: Bạn chắc chứ?
+      new:
+        create_article: Tạo bài viết
+        draft: Bản nháp
+        publish: Công bố
+        create: Tạo mới
+    register_lawyer:
+      lawyer_profiles:
+        new:
+          regis_lawyer: Đăng ký luật sư
+          submit: *submit
+          lawyer_card_image: Ảnh chụp thẻ luật sư
+          id_card_image: Ảnh chụp chứng minh thư nhân dân
+          lawyer_card_id: Số thẻ Luật Sư
+    accounts:
+      edit:
+        edit_profile: Sửa hồ sơ
+        submit: *submit
+    clips:
+      index:
+        cliped_article: Các bài viết đã theo dõi
+  comments:
+    _comment:
+      started_by: Bắt đầu bởi
+      replied_by: Phản hồi bởi
+      reply: Phản hồi
+  law_firms:
+    show:
+      out_law_firm: Ra ngoài văn phòng luật
+      lawyers: Luật sư trực thuộc
+    lawyer:
+      reputation: Điểm hữu ích
+    reviews:
+      submit: Tạo đánh giá
+    law_firm_info:
+      lawyers: Luật sư trực thuộc
+  lawyer:
+    lawyer_profiles:
+      edit:
+        edit_law_profile: Sửa hồ sơ luật sư
+        submit: *submit
+    accounts:
+      show:
+        article: Bài viết
+        create_new_article: Tạo mới bài viết
+        new_article: Tạo mới
+      edit:
+        submit: *submit
+        edit_profile: Chỉnh sửa thông tin cá nhân
+    add_law_firms:
+      _add_law_firm:
+        approve: Chấp nhận
+        reject: Từ chối
+        confirm: Xác nhận
+      index:
+        add_law_firm: Thêm văn phòng luật
+        name: Tên
+        phone_number: Số điện thoại
+        fax: Fax
+        email: Email
+        address: Địa chỉ
+        introduction: Giới thiệu
+    answers:
+      new:
+        new_answers: Câu trả lời mới
+        submit: *submit
+    advertise:
+      history_advertises:
+        new:
+          submit: *submit
+          price: Giá mua quảng cáo mỗi ngày
+          point: Điểm
+    articles:
+      tag:
+        add_tag_description: Tạo giải thích tag
+        finish: Hoàn thành
+      form:
+        title: Tiêu đề
+        status: Trạng thái
+        categories: Thể loại
+        tag_list: Danh sách tag
+        total_vote: Số lượng vote
+        content: Nội dung
+      show:
+        author: *author
+        recommend_lawyers: *recommend_lawyers
+      _article.html:
+        show: Chưng bày
+        edit: Sửa
+        destroy: Phá hủy
+      _form.html:
+        draft: Bản nháp
+        publish: Công bố
+        tag_list_message: Thẻ được phân cách bằng dấu phẩy
+      edit:
+        next: Tiếp theo
+        edit: Sửa
+        edit_article: Sửa bài viết
+      index:
+        article: Bài viết
+        new: Taọ mới
+        title: Tiêu đề
+        content: Nội dung
+        category_name: Tên danh mục
+        tag_list: Danh sách thẻ
+        status: Trạng thái
+        total_vote: *total_vote
+        action: Hành động
+        edit: Sửa
+        destroy: Xoá
+        create_new_article: Tạo mới bài viết
+        new_article: Tạo mới
+      new:
+        next: Tiếp theo
+        submit: Tạo bài viết
+        create_article: Tạo Bài viết
+    law_firm_members:
+      _search_lawyer_result:
+      _show_lawyer_profile:
+        name: Tên
+        id: Id
+        email: Email
+        address: Tài khoản
+        phone_number: Số điện thoại
+        fax_number: Số fax
+        introduction: Giới thiệu
+    law_firms:
+      new:
+        create_law_firm: Văn phòng luật của tôi
+        submit: *submit
+    request_law_firms:
+      approve: Chấp nhận
+      reject: Từ chối
+      confirm: Xác nhận
+    clips:
+      index:
+        clipped_article: Các bài viết đã ghim
+        create_new_article: Tạo mới bài viết
+        new_article: Tạo mới
+    draft:
+      articles:
+        index:
+          draft: Các bài viết nháp đã lưu
+          create_new_article: Tạo bài viết mới
+          new_article: Tạo mới
+  admin:
+    answers:
+      index:
+        delete: *delete
+        user_name: Tên người dùng
+        content: Nội dung
+        action: *action
+        confirm: *confirm_delete
+        answer: Câu trả lời
+    lawyer_profiles:
+      index:
+        name: *name
+        email: *email
+        status: Trạng thái
+        action: *action
+        lawyer_profile: Luật sư
+      show:
+        name: *name
+        email: *email
+        active: *active
+        block: *block
+        block_btn: Khoá Luật sư
+        active_btn: Kích hoạt luật sư
+        address: Địa chỉ
+        phone_number: Số điên thoại
+        introduction: Giới thiệu
+        lawyer_id: Số thẻ luật sư
+        lawyer_card_image: Ảnh thẻ luật sư
+        id_card_image: Ảnh thẻ chứng minh thư
+      lawyer_profile:
+        active: *active
+        block: *block
+        block_btn: Khoá Luật sư
+        active_btn: Kích hoạt luật sư
+    approve:
+      lawyer_profiles:
+        index:
+          name: *name
+          email: *email
+          status: Trạng thái
+          action: *action
+          lawyer_profile: Luật sư đăng ký mới
+        lawyer_profile:
+          active: *active
+          block: *block
+          active_btn: Xác nhận luật sư
+        show:
+          name: *name
+          email: *email
+          active: *active
+          block: *block
+          block_btn: Khoá Luật sư
+          active_btn: Kích hoạt luật sư
+          address: Địa chỉ
+          phone_number: Số điên thoại
+          introduction: Giới thiệu
+          lawyer_id: Số thẻ luật sư
+          lawyer_card_image: Ảnh thẻ luật sư
+          id_card_image: Ảnh thẻ chứng minh thư
+    law_firms:
+      law_firm:
+        active: *active
+        block: *block
+      index:
+        name: *name
+        address: *address
+        is_active: *is_active
+        action: *action
+        lawyer_firm: Văn phòng luật
+        status: Trạng thái
+    accounts:
+      index:
+        user: Người dùng
+        active: *active
+        block: *block
+        status: Trạng thái
+        action: Hành động
+    articles:
+      index:
+        title: *title
+        content: *content
+        action: *action
+        delete: *delete
+        article: Bài viết
+        confirm: Bạn chắc chắn muốn xóa bài viết này?
+  search:
+    top_pages:
+      index:
+        article: Bài viết
+        question: Câu hỏi
+        lawyer_profile: Luật sư
+        law_firm: Văn phòng luật
+      _show_article_question:
+        title: *title
+        content: *content
+      _show_law_firm:
+        name: Tên
+        email: Email
+        phone_number: Số điện thoại
+        address: Địa chỉ
+        fax_number: Số fax
+        introduction: Giới thiệu
+      _show_lawyer_profile:
+        name: Tên
+        id: Id
+        email: Email
+        phone_number: Số điện thoại
+        address: Địa chỉ
+        fax_number: Số fax
+        introduction: Giới thiệu
+  shared:
+    lawyer_profiles:
+      form:
+        lawyer_card_id: Mã số thẻ luật sư
+        introduction: Tự giới thiệu
+        fax_number: FAX
+        phone_number: Số điện thoại
+        address: Địa chỉ
+        full_name: Tên của luật sư
+      lawyer_statistis:
+        lawyer_stats: Thống kê của luật sư
+        total_point: Điểm thưởng
+        reputation: Điểm hữu ích
+        articles: Số bài viết
+        answers: Số câu trả lời
+    answers:
+      action_buttons:
+        edit: Chỉnh sửa
+        delete: Xoá
+        confirm_delete: Bạn chắc chắn muốn xoá?
+    categories:
+      follow:
+        follow: Theo dõi
+        unfollow: Bỏ theo dõi
+    statistics:
+      article_statitic:
+        view_number: Số lượt xem
+        votes_number: Số lượt hữu ích
+        clips_number: Số lượt ghim
+        comment_number: Số lượt bình luận
+      question_statitic:
+        view_number: Số lượt xem
+        vote_number: Số lượt vote
+        answer_number: Số câu trả lời
+      lawyer_profile_stat:
+        reputation: Danh tiếng
+        articles: Số bài viết
+        answers: Số câu trả lời
+    articles:
+      action_buttons:
+        edit: Chỉnh sửa
+        delete: Xoá
+        confirm_delete: *confirm_delete
+    questions:
+      action_buttons:
+        edit: Chỉnh sửa
+        delete: Xoá
+        confirm_delete: *confirm_delete
+    clip:
+      clip_this_article: Ghim bài viết
+      remove_this_clip: Xóa ghim bài viết
+    users:
+      user_statistic:
+        user_stats: Thống kê người dùng
+        questions: Số câu hỏi
+        clips: Số bài ghim
+        vote_up: Số lần vote hữu ích
+      votes:
+        new_vote_form:
+          vote_up: Hữu ích
+          vote_down: Phản đối
+        delete_vote_form:
+          vote_up: Bỏ hữu ích
+          vote_down: Bỏ phản đối
+    accounts:
+      form:
+        name: Họ và tên
+        email: Địa chỉ email
+        avatar: Avatar cá nhân
+  categories:
+    show:
+      articles: Bài viết
+      questions: Câu hỏi
+      recommend_lawyers: *recommend_lawyers

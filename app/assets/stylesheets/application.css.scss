@@ -1,0 +1,213 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_directory .
+ *= require "css/application"
+ *= require "scss/application"
+ *= require_self
+ *= require css/bootstrap
+ *= require bootstrap-datetimepicker
+ */
+
+
+.replies {margin-left: 50px;}
+.no-border-radius{border-radius: 0!important;}
+.no-border{border: none!important;}
+.card{
+	position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    }
+.mb-0{margin-bottom: 0!important;}
+.post-feed-item{
+	padding: .5rem;
+    border-bottom: 1px solid #d6d6d7;
+    }
+.d-flex{
+	display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+	}
+.card-block{
+	-webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+.full-width{
+	width: 100%!important;
+}
+.post-header .post-meta{
+	font-size: 1.5rem;
+}
+.flex-wrap{
+	    flex-wrap: wrap;
+}
+.align-items-center{
+	-webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.post-header .post-title-box{
+	flex-wrap: wrap;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+*, :after, :before{
+	box-sizing: inherit;
+}
+.padding-left {
+	padding-left :10px;
+}
+.padding-row-left{
+	padding-left : 100px;
+}
+.user-profile .profile-stats{
+	padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #d6d6d7;
+}
+.sidebar-area .box-contact{
+	padding: 25px 20px;
+}
+.box-contact {
+	background-color: #efefef;
+    border: 1px solid #dfdfdf;
+    float: left;
+    padding: 25px 9px;
+    width: 100%;
+}
+.module-section {
+	margin-bottom: 30px;
+}
+.bg-light-purple {
+	background-color: #99e2df !important;
+}
+.box-contact .info-profile {
+	margin-bottom: 30px;
+}
+.box-contact .info-profile h4 {
+	color: #2d3032;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.info-profile .title{
+	word-break: break-word;
+}
+.box-contact .phone {
+	color: #b71b52;
+    display: block;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.tab-wrap .tab-title-5-column .tab-title-item {
+	width: 20%;
+    float: left;
+}
+.lg-tab-content-wrap .tab-title-item {
+	color: #5a5858;
+    font-weight: bold;
+    text-align: center;
+    min-height: 50px;
+    padding: 10px 0;
+    position: relative;
+}
+.laywer_profile_tabs{
+	list-style: none;
+}
+.content-trouble .title-content{
+	background: #f7f7f7;
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.content-trouble h3, .content-trouble h2 {
+	color: #081015;
+    font-weight: bold;
+    font-size: 20px;
+    border-left: 5px solid #b71b52;
+    padding: 10px;
+    float: left;
+    margin: 5px 0px 5px 0px;
+}
+.tab-wrap .content-trouble{
+	margin-top: 0;
+}
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.field_with_errors {
+    input, select {
+        border: 1px solid red;
+    }
+}
+
+.danger {
+    color: red !important;
+}
+
+.error_list {
+    border: 2px solid red;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.selection_active {
+    font-weight: bold !important;
+    text-decoration: none !important;
+    color: red !important;
+  }

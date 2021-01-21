@@ -1,0 +1,63 @@
+<div class="section-item">
+  <div class="row">
+    <div class="col-md-1 al-center">
+      <% if current_account.present? && current_account.id != answer.id %>
+        <% answer_vote = answer.init_vote current_account.id %>
+        <% if answer_vote.persisted? %>
+          <p><%= render "shared/users/votes/delete_vote_form", vote: answer_vote, model: answer %></p>
+        <% else %>
+          <p><%= render "shared/users/votes/new_vote_form", vote: answer_vote, model: answer %></p>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="col-md-8">
+      <p><%= render "shared/answers/action_buttons", answer: answer %></p>
+      <div class="" id="answer-content-<%= answer.id %>">
+        <p><%= simple_format answer.content %></p>
+      </div>
+      <div class="temple_hide" id="answer-form-<%= answer.id %>">
+        <%= form_for [:lawyer, answer] do |f| %>
+          <%= render "shared/errors_list", object: answer %>
+
+          <%= f.text_area :content, row: 3, class: "form__input" %>
+          <%= f.submit t(".update_answer"), class: "form__btn" %>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <%= link_to lawyer_profile_path(answer.account.lawyer_profile) do %>
+        <p><%= image_tag answer.account_avatar_url, size: "40x40", class: "no_margin" %></p>
+        <p><%= answer.account_name %></p>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row padding-arround">
+    <% answer_id = answer.id %>
+    <p>
+      <% if current_account %>
+        <!-- Link to show comment form -->
+        <span><%= link_to t(".create_comment"), "", class: "create_comment", data: "#{answer_id}" %> | </span>
+      <% end %>
+      <% if answer.comments.count > 0 %>
+        <!-- Link to show comment -->
+        <span><%= link_to t(".hide_show_comment"), "", class: "toggle_comments", data: "#{answer_id}" %></span>
+        <span class="badge"><%= answer.comments.count %></span>
+      <% end %>
+    <p>
+    <div class="temple_hide" id="answer-<%= answer_id %>">
+      <% if current_account != nil %>
+        <% @commentable = answer%>
+        <!-- render comment form -->
+        <%= render "form", comment: @comment%>
+      <% end %>
+    </div>
+    <% @comments = answer.comments.hash_tree(limit_depth: 5) %>
+  </div>
+
+  <div class="row padding-arround temple_hide" id="comments-<%= answer_id %>">
+    <div class="col-md-12">
+      <%= comments_tree_for @comments.reverse_each %>
+    </div>
+  </div>
+</div>

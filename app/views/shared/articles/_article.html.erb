@@ -1,0 +1,30 @@
+<div class="row article-index" id="article-<%= article.id %>">
+  <div>
+    <div class="col-md-9">
+      <div class="index-article-title">
+        <p>
+          <%= link_to article.title, article_path(article), class: "bold" %>
+          <span class="pull-right">
+            <%= render("shared/articles/action_buttons", article: article) if current_account %>
+          </span>
+        </p>
+        <p>
+          <span><%= link_to article.category_name, category_path(article.category) %> | </span>
+          <span><%= article.created_at.to_formatted_s(:short) %></span>
+        </p>
+        <%= render "shared/statistics/article_statitic", article: article, action: "index" %>
+      </div>
+      <div class="index-article-body">
+        <%= strip_tags(article.content).truncate 300 %>
+      </div>
+    </div>
+    <div class="col-md-3 al-center pd10">
+      <div class="account-info">
+        <%= link_to lawyer_profile_path(article.account.lawyer_profile) do %>
+          <div><%= image_tag article.account_avatar_url, size: "50x50", class: "no_margin" %></div>
+          <p><%= article.account_name %></p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

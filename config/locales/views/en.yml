@@ -1,0 +1,445 @@
+en:
+  my_page: My Page
+  sign_out: Sign Out
+  views:
+    pagination:
+      next: Next
+      last: Last
+      previous: Previous
+      first: First
+  account: Account
+  law_firm: Law Firm
+  dictionary:
+    submit: &submit Submit
+    active: &active Active
+    block: &block Block
+    name: &name Name
+    email: &email Email
+    is_active: &is_active Is Active
+    action: &action Action
+    address: &address Address
+    title: &title Title
+    delete: &delete Delete
+    content: &content Content
+    author: &author Author
+    recommend_lawyers: &recommend_lawyers Recommend Lawyers
+    article: &article Article
+    answer: &answer Answer
+    question: &question Question
+    popular_tags: &popular_tags Popular Tags
+    top_month: &top_month Top Month
+    confirm_delete: &confirm_delete Delete? Are you sure?
+  layouts:
+    admins:
+      navigator:
+        approve: Lawyer
+        not_approve: New register Lawyer
+        law_firm: LawFirm
+        user: User
+        article: Article
+        question: Question
+        answer: Answer
+    lawyers:
+      lawyer_navigator:
+        notification: Notification
+        history_advertise: Advertise
+        law_firm: LawFirm
+        account: Account
+        request_law_firm: Request law firm
+        law_firm_member: Law firm member
+        add_law_firm: Add law firm
+        lawyer_profile: lawyer_profile
+        follow_categories: Follow Categories
+    users:
+      user_navigator:
+        Questions: Questions
+        clips: Clips
+        account: Account
+        register_lawyer: Register User
+        follow_categories: Follow Categories
+    shared:
+      login_buttons:
+        sign_in: Sign in
+  lawyer_profiles:
+    reviews:
+      input_review: Input your review
+      submit: Save review
+    lawyer_info:
+      name: Name
+      lawyer_id: Lawyer's ID
+      address: Adress
+      phone_number: Phone number
+      fax_number: Fax number
+      law_firm_name: LawFirm
+  follows:
+    follow_categories:
+      index:
+        first_follow: Follow the category, which you are interested to recieve newset ảticles and questions
+        next: Tiếp theo
+  questions:
+    answer:
+      update_answer: Cập nhật câu trả lời
+    index:
+      popular_tag: *popular_tags
+      top_month: *top_month
+      questions: *question
+    form:
+      create_comment_box: Input your comment
+      submit: Tạo bình luận
+    show:
+      answer: *answer
+      qustion: *question
+      related_question: Related questions
+      popular_tags: *popular_tags
+      create_answer_box: Input your answer
+      submit: Create Answer
+    answer:
+      update_answer: Update
+      create_comment: Create Comment
+      hide_show_comment: Hide/Show comments
+  articles:
+      _article:
+        show: Show
+      index:
+        article: Article
+        new: New
+        title: Title
+        content: Content
+        category_name: Category name
+        tag_list: Tag list
+        status: Status
+        total_vote: Total vote
+        action: Action
+        edit: Edit
+        destroy: destroy
+      show:
+        title: Title
+        content: Content
+        category_name: Category name
+        tag_list: Tag list
+        status: Status
+        total_vote: Total vote
+        action: Action
+        edit: Edit
+        destroy: Destroy
+        article: *article
+        author: *author
+        recommend_lawyers: *recommend_lawyers
+        comment: Comment
+      recommend:
+        related: Related articles
+        from_author: More from this author
+  top_pages:
+    index:
+      top_page: "This is top page"
+      popular_tag: *popular_tags
+      top_month: *top_month
+      article: *article
+  user:
+    register_lawyer:
+      lawyer_profiles:
+        new:
+          submit: *submit
+          lawyer_card_image: Image of lawyer card
+          id_card_image: Image of ID card
+          lawyer_card_id: Lawyer's card ID
+    accounts:
+      edit:
+        edit_profile: Edit Profile
+        submit: *submit
+    questions:
+      new:
+        submit: *submit
+      edit:
+        edit_question: Edit Question
+        submit: *submit
+      index:
+        content: Content
+        title: Title
+        action: Action
+        new: Create New Question
+      question:
+        confirm: Are you sure?
+      new:
+        create_article: Create Article
+        draft: Draft
+        publish: Publish
+        create: Create
+  comments:
+    _comment:
+      started_by: Started by
+      replied_by: Replied by
+      reply: Reply
+  law_firms:
+    show:
+      out_law_firm: Out law firm
+      lawyers: Lawyers in LawFirm
+    lawyer:
+      reputation: Reputation Point
+    reviews:
+      submit: Create Review
+    law_firm_info:
+      lawyers: Lawyer in LawFirm
+  lawyer:
+    lawyer_profiles:
+      edit:
+        edit_lawyer_profile: Edit Lawyer Profile
+        submit: *submit
+    accounts:
+      edit:
+        submit: *submit
+    add_law_firms:
+      _add_law_firm:
+        approve: Approve
+        reject: Reject
+        confirm: confirm
+      index:
+        add_law_firm: Add law firm
+        name: Name
+        phone_number: Phone number
+        fax: Fax
+        email: Email
+        address: Address
+        introduction: Introduction
+    answers:
+      new:
+        new_answers: New Answer
+        submit: *submit
+    advertise:
+      history_advertises:
+        new:
+          submit: *submit
+          price: Price for each day advertise
+          point: Point
+    articles:
+      tag:
+        add_tag_description: Create Tag Description
+        finish: Finish
+      form:
+        title: Title
+        status: Status
+        categories: Categories
+        tag_list: Tag list
+        total_vote: Total Vote
+        content: Content
+      _article.html:
+        show: Show
+        edit: Edit
+        destroy: Destroy
+      _form.html:
+        draft: Draft
+        publish: Publish
+        tag_list_message: Tags are separated by commas
+      edit:
+        next: Next
+        edit: Edit
+        edit_article: Edit Article
+      index:
+        article: Article
+        new: New
+        title: Title
+        content: Content
+        category_name: Category Name
+        tag_list: Tag list
+        status: Status
+        total_vote: Total vote
+        action: Action
+        edit: Edit
+        destroy: destroy
+      new:
+        new: Next
+        submit: Create
+        create_article: Create Article
+    law_firm_members:
+      _search_lawyer_result:
+      _show_lawyer_profile:
+        name: Name
+        id: Id
+        email: Email
+        address: Address
+        phone_number: Phone number
+        fax_number: Fax number
+        introduction: Introduction
+    law_firms:
+      new:
+        create_law_firm: My LawFirm
+        submit: *submit
+    request_law_firms:
+      approve: Approve
+      reject: Reject
+      confirm: confirm
+  admin:
+    answers:
+      index:
+        delete: *delete
+        user_name: Tên người dùng
+        content: Content
+        action: *action
+        confirm: *confirm_delete
+        answer: Answers
+    lawyer_profiles:
+      index:
+        name: *name
+        email: *email
+        status: Status
+        action: *action
+        lawyer_profile: Lawyer profile
+      show:
+        name: *name
+        email: *email
+        status: Status
+        active: *active
+        block: *block
+        block_btn: Block lawyer
+        active_btn: Active lawyer
+        address: Địa chỉ
+        phone_number: Số điên thoại
+        introduction: Giới thiệu
+        lawyer_id: Số thẻ luật sư
+        lawyer_card_image: Ảnh thẻ luật sư
+        id_card_image: Ảnh thẻ chứng minh thư
+      lawyer_profile:
+        active: *active
+        block: *block
+        block_btn: Block lawyer
+        active_btn: Active lawyer
+    approve:
+      lawyer_profiles:
+        index:
+          name: *name
+          email: *email
+          status: Status
+          action: *action
+        lawyer_profile:
+          active: *active
+          block: *block
+          active_btn: Active lawyer
+        show:
+          name: *name
+          email: *email
+          status: Status
+          active: *active
+          block: *block
+          block_btn: Block lawyer
+          active_btn: Active lawyer
+          address: Địa chỉ
+          phone_number: Số điên thoại
+          introduction: Giới thiệu
+          lawyer_id: Số thẻ luật sư
+          lawyer_card_image: Ảnh thẻ luật sư
+          id_card_image: Ảnh thẻ chứng minh thư
+    law_firms:
+      law_firm:
+        active: *active
+        block: *block
+      index:
+        name: *name
+        address: *address
+        is_active: *is_active
+        action: *action
+        lawyer_firm: Law firm
+        status: Status
+    accounts:
+      index:
+        user: User
+        active: *active
+        block: *block
+        action: *action
+        status: Status
+    articles:
+      index:
+        title: *title
+        content: *content
+        action: *action
+        delete: *delete
+        article: Article
+        confirm: Are you sure to delete this article?
+  search:
+    top_pages:
+      index:
+        article: Articles
+        question: Questions
+        lawyer_profile: Lawyers
+        law_firm: LawFirms
+      _show_article_question:
+        title: *title
+        content: *content
+      _show_law_firm:
+        name: Name
+        email: Email
+        phone_number: Phone number
+        address: Address
+        fax_number: Fax number
+        introduction: Introduction
+      _show_lawyer_profile:
+        name: Name
+        id: Id
+        email: Email
+        phone_number: Phone number
+        address: Address
+        fax_number: Fax number
+        introduction: Introduction
+  shared:
+    lawyer_profiles:
+      form:
+        lawyer_card_id: Lawyer's card ID
+        introduction: Introduction
+        fax_number: FAX
+        phone_number: Phone number
+        address: Address
+        full_name: Full name
+      lawyer_statistis:
+        lawyer_stats: Lawyer's Statistic
+        total_point: Total Point
+        reputation: Reputation
+        articles: Articles
+        answers: Answers
+    answers:
+      action_buttons:
+        edit: Edit answer
+        delete: Delete answer
+        confirm_delete: Delete? Are you sure
+    categories:
+      follow:
+        follow: Theo dõi
+        unfollow: Bỏ theo dõi
+    statistics:
+      article_statitic:
+        view_number: Views number
+        votes_number: Votes number
+        clips_number: Clipped number
+        comment_number: Comments number
+      question_statitic:
+        view_number: Views number
+        vote_number: Votes number
+        answer_number: Answer number
+      lawyer_profile_stat:
+        reputation: Reputation
+        articles: Articles number
+        answers: Answer number
+    articles:
+      action_buttons:
+        edit: Edit
+        delete: Delete
+        confirm_delete: *confirm_delete
+    questions:
+      action_buttons:
+        edit: Edit
+        delete: Delete
+        confirm_delete: *confirm_delete
+    clip:
+      clip_this_article: Clip this Article
+      remove_this_clip: Remove this Clip
+    users:
+      votes:
+        new_vote_form:
+          vote_up: Vote up
+          vote_down: Vote down
+        delete_vote_form:
+          vote_up: Vote up
+          vote_down: Vote down
+  categories:
+    show:
+      articles: Articles
+      questions: Questions
+      recommend_lawyers: *recommend_lawyers

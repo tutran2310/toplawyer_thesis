@@ -1,0 +1,206 @@
+$main-green: #52bab3;
+
+.cate_navi .nav li a {
+  padding: 10px 8px !important;
+}
+
+#search_form {
+  max-width: 250px !important;
+}
+
+.nav-tabs, .nav {
+  margin-bottom: 10px !important;
+}
+
+.sub_navi {
+  min-width: 900px;
+  font-size: 12px;
+}
+
+body {
+  font-size: 12px;
+  font-family: sans-serif;
+  background-color: aliceblue !important;
+}
+
+div {
+  display: block;
+}
+
+.cover_image {
+  height: 150px;
+  margin-top: 50px;
+}
+
+.image_cover {
+  height: 150px;
+  min-width: 100%;
+}
+
+.link_none_decorate {
+  text-decoration: none !important;
+}
+
+.footer {
+  margin-top: 80px;
+  height: 200px;
+  // background: url("https://s3-ap-southeast-1.amazonaws.com/toplawyer/footer-background.jpg") no-repeat center;
+  // background-position: 50% 50%;
+  // background-size: 100%;
+  background-color: black;
+}
+
+.small_font {
+  font-size: 13px !important;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.pd-10 {
+  padding: 10px;
+}
+
+.mg-left {
+  margin-left: 20px;
+}
+
+.mg-5 {
+  margin: 5px;
+}
+
+.item-hide {
+  display: none !important;
+}
+
+.temple_hide {
+  display: none;
+}
+
+.no_margin {
+  margin: 0;
+}
+
+.no_border {
+  border: none !important;
+}
+
+.margin-tb-10 {
+  margin: 10px 0;
+}
+
+.al-center {
+  text-align: center;
+}
+
+.padding-arround {
+  padding: 15px !important;
+}
+
+.icon_btn {
+  display: inline-block;
+  padding: 0;
+  border: 0;
+  background: none;
+  text-decoration: none;
+  outline: none;
+}
+
+.new_vote {
+  color: #337ab7;
+}
+
+.new_vote :hover {
+  color: #0033cc;
+}
+
+.navbar-inverse .navbar-nav, .dropdown-menu {
+  li {
+    a:focus, a:hover {
+      color: #fff !important;
+      background-color: grey !important;
+      height: 55px !important;
+    }
+  }
+}
+
+.navbar-nav {
+  li {
+    a {
+      padding-bottom: 0px !important;
+    }
+  }
+}
+
+#top-navi {
+  margin-top: 0;
+  background-color: $main-green;
+  border-color: $main-green;
+
+  .item {
+    color: black;
+  }
+}
+
+.section-title {
+  min-height: 40px;
+  width: 100%;
+  background-color: $main-green;
+  color: black;
+  margin: 0;
+  border: 2px solid $main-green;
+}
+
+.section-body {
+  width: 100%;
+  background-color: white;
+  color: black;
+  margin: 0 0 20px;
+  border: 2px solid $main-green;
+}
+
+.small_table {
+  td {
+    padding: 0px !important;
+  }
+}
+
+.row .section-item {
+  margin: 10px;
+  border-bottom: 1px solid grey;
+}
+
+.sub-section-title {
+  border-bottom: 2px solid #52bab3;
+  margin: 0 !important;
+}
+
+.sub-section-title-both {
+  border-bottom: 2px solid #52bab3;
+  border-top: 2px solid #52bab3;
+  margin: 0 !important;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip_body {
+  border-bottom: 1px dotted black;
+  display: inline-block;
+}
+
+.category_container {
+  width: 25%;
+  padding: 5px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.category_box {
+  border: 1px solid $main-green;
+  color: $main-green;
+  padding: 10px;
+}

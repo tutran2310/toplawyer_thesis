@@ -1,0 +1,34 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  # host: <%= ENV["DATABASE_HOSTNAME"] %>
+  # database: <%= ENV["DATABASE_NAME"] %>
+  # username: postgresql
+  # password: <%= ENV["DATABASE_PASSWORD"] %>
+  # redis:
+  #   host: redis://<%= ENV["REDIS_HOSTNAME"] %>:6379
+  #   options:
+  #     :namespace: <%= ENV["DATABASE_NAME"] %>
+  #     :key: "_session_id"
+  #     :compress: false
+
+development:
+  <<: *default
+  database: top_lawyer_development
+
+test:
+  <<: *default
+  database: top_lawyer_test
+
+staging:
+  <<: *default
+  database: top_lawyer_staging
+
+production:
+  <<: *default
+  database: top_lawyer_production
+
+top_lawyerus_temporary:
+  <<: *default
+  database: top_lawyer_old

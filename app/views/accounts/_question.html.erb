@@ -1,0 +1,27 @@
+<div class="card no-border no-border-radius mb-0">
+    <div class="card-block post-feed-item d-flex">
+        <figure class="post-author-avatar padding-left">
+          <%= image_tag @account.account_avatar_url, size: "60x60", class: "" %>
+        </figure>
+        <div class="ml-05 full-width padding-left">
+            <div class="post-header">
+                <div class="post-meta d-flex align-items-center flex-wrap">
+                	<a class="mr-05 nuxt-link-exact-active active "><%= @account.name %></a>
+                    <div class="text-muted padding-left">
+                    	<span class="pull-right"><%= question.created_at.to_formatted_s(:short) %></span>
+                    </div>
+                </div>
+                <div class="post-title-box d-flex align-items-center">
+                    <h4>
+                    	<div class="post-title-header word-break">
+                    		<%= link_to question.title, question_path(question)%>
+                    	</div>
+                	</h4>
+            	</div>
+              <div class="">
+                <%= render "shared/statistics/question_statitic", question: question, action: :show %>
+              </div>
+    		</div>
+		</div>
+	</div>
+</div>

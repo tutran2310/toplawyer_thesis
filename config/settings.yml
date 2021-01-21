@@ -1,0 +1,37 @@
+flash:
+  notice: "alert-info"
+  error: "alert-error"
+  alert: "alert-warning"
+  success: "alert-success"
+  failed: "alert-danger"
+article:
+  top_page:
+    per: 10
+    truncate: 200
+  related: 4
+question:
+  top_page:
+    per: 20
+    truncate: 200
+  related: 4
+paginate:
+  default: 10
+time_format:
+  full_time: "YYYY-MM-DD HH:mm"
+  datetime: "YYYY-MM-DD"
+  hour_time: "HH:mm"
+search:
+  per_page:
+    default: 8
+carrierwave:
+ fog_cache_control: 1.hour
+ fog_expiration: 1.hour
+ fog_public: true
+per_page:
+  default: 10
+ranking:
+  top_page: 5
+advertise_number:
+  category: 6
+images:
+  default_avatar: https://cdn.dribbble.com/users/264/screenshots/1035073/untitled-2.jpg

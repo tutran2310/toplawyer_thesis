@@ -1,0 +1,75 @@
+<div class="col-md-9">
+  <div class="section-title al-center">
+    <h4><%= t ".question" %></h4>
+  </div>
+  <div class="section-body padding-arround">
+    <div class="row">
+      <% if current_account.present? && current_account.id != @question.account_id %>
+        <div class="col-md-1 al-center">
+          <%= render("vote_form", vote: @vote, model: @question) %>
+        </div>
+      <% end %>
+      <div class="col-md-11">
+        <p class="bold">
+          <span><%= @question.title %></span>
+          <span class="pull-right">
+            <%= render("shared/questions/action_buttons", question: @question) if current_account %>
+          </span>
+        <p>
+          <span><%= link_to @question.category_name, category_path(@question.category) %></span>
+          <span> | <%= @question.created_at.to_formatted_s(:short) %></span>
+        </p>
+        <%= render "shared/statistics/question_statitic", question: @question, action: "show" %>
+        <p><%= raw @question.content %></p>
+        <hr>
+        <% if current_account.present? && current_account.Lawyer? %>
+          <%= form_for [:lawyer, @question.answers.build] do |f| %>
+            <div class="field">
+              <%= f.hidden_field :from_page, value: :top_page %>
+              <%= f.hidden_field :question_id %>
+              <%= f.text_area :content, rows: 2, class: "form__input",
+                placeholder: t(".create_answer_box") %>
+              <%= f.submit t(".submit"), class: "btn--default" %>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title al-center">
+    <h4><%= t ".answer" %></h4>
+  </div>
+  <div class="section-body padding-arround">
+    <%= render partial: "answer", collection: @answers, as: :answer %>
+  </div>
+  <div id="sidebar" class="show-votes" role="complementary" aria-label="sidebar"></div>
+</div>
+
+<div class="col-md-3">
+  <div class="section-title al-center">
+    <h4><%= t ".user" %></h4>
+  </div>
+  <div class="section-body padding-arround al-center">
+    <%= link_to account_path(@question.account) do %>
+      <%= image_tag @question.account_avatar_url, size: "50x50", class: "no_margin" %>
+      <p><%= @question.account_name %></p>
+    <% end %>
+  </div>
+
+  <div class="section-title al-center">
+    <h4><%= t ".popular_tags" %></h4>
+  </div>
+  <div class="section-body padding-arround">
+    <ul class="list_tag_show">
+      <%= render partial: "shared/tags/tag", collection: @top_tags, as: :tag %>
+    </ul>
+  </div>
+
+  <div class="section-title al-center">
+    <h4><%= t ".related_question" %></h4>
+  </div>
+  <div class="section-body padding-arround">
+    <%= render partial: "shared/questions/related_question", collection: @related_questions, as: :question %>
+  </div>
+</div>

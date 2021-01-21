@@ -1,0 +1,157 @@
+vi:
+  dictionary:
+    updated: &updated Cập nhật thành công!
+    update_fail: &update_fail Cập nhật Thất bại!
+    created: &created Tạo mới thành công!
+    create_fail: &create_fail Tạo mới Thất bại!
+    deleted: &deleted Xóa thành công!
+    delete_fail: &delete_fail Xóa Thất bại!
+  user:
+    reviews:
+      create:
+        created: *created
+        create_fail: *create_fail
+    register_lawyer:
+      lawyer_profiles:
+        update:
+          updated: *updated
+          update_fail: *update_fail
+        create:
+          created: *created
+          create_fail: *create_fail
+    accounts:
+      update:
+        access_denies: Truy cập không hợp lệ!
+        updated: *updated
+        update_fail: *update_fail
+    questions:
+      create:
+        updated: Câu hỏi của bạn đã tạo thành công!
+        fail: Lỗi! Vui lòng sửa theo mẫu
+      destroy:
+        updated: Câu hỏi của bạn đã tạo thành công!
+        fail: Lỗi! Vui lòng sửa theo mẫu
+  articles:
+    create:
+      new: Tạo mới
+      Please_correct_the_form: Lỗi! Vui lòng sửa theo mẫu
+    update:
+      updated: Cập nhật
+      fail: Lỗi
+    article:
+      access_denies: Truy cập không hợp lệ!
+  comments:
+    new: Tạo mới
+    comment_error: Nhận xét lỗi
+  request_law_firms:
+    new: Tạo mới
+  lawyer:
+    articles:
+      update:
+        updated: *updated
+        update_fail: *update_fail
+      create:
+        created: *created
+        create_fail: *create_fail
+      destroy:
+        deleted: *deleted
+        delete_fail: *delete_fail
+    lawyer_profiles:
+      update:
+        updated: *updated
+        update_fail: *update_fail
+    answers:
+      create:
+        created: *created
+        create_fail: *create_fail
+      update:
+        updated: *updated
+        update_fail: *update_fail
+      destroy:
+        deleted: *deleted
+        delete_fail: *delete_fail
+    question:
+      create: *created
+      create_fail: *create_fail
+    accounts:
+      update:
+        updated: *updated
+        update_fail: *update_fail
+    law_firms:
+      new:
+        my_law_firm: Văn phòng luật của tôi
+      create:
+        created: *created
+        create_fail: *create_fail
+      update:
+        updated: *updated
+        update_fail: *update_fail
+      form:
+        name: Tên văn phòng luật
+        address: Địa chỉ
+        province_id: Tỉnh thành
+        phone_number: Số điện thoại
+        fax: fax
+        introduction: Giới thiệu
+        working_start_time: Giờ mở cửa
+        working_end_time: Giờ đóng cửa
+    lawyer_profiles:
+      edit:
+        access_denies: Truy cập không hợp lệ!
+        updated: *updated
+        update_fail: *update_fail
+    law_firm_members:
+      show_lawyer_profile:
+        confirm: Bạn có chắc chắn muốn xóa luật sư này?
+        name: Họ Tên
+        email: Địa chỉ email
+        address: địa chỉ
+        id: ID của luật sư
+        phone_number: Số điện thoại
+        introduction: Giới thiệu
+        show: Xem
+        remove: Xóa
+    advertise:
+      history_advertises:
+        created: *created
+        create_fail: *create_fail
+        new:
+          buy_advertise: Mua quảng cáo
+          category: Lĩnh vực
+          end_time: Ngày kết thúc
+          start_time: Ngày bắt đầu
+    notifies:
+      index:
+        noti: Thông báo
+  admin:
+    lawyer_profiles:
+      updated: *updated
+      update_fail: *update_fail
+    law_firms:
+      updated: *updated
+      update_fail: *update_fail
+    accounts:
+      updated: *updated
+      update_fail: *update_fail
+    articles:
+      destroy:
+        deleted: *deleted
+        delete_fail: *delete_fail
+    questions:
+      destroy:
+        deleted: *deleted
+        delete_fail: *delete_fail
+  lawyer_profiles:
+    show:
+      profile: Thông tin cá nhân
+      article: Bài viết
+      answers: Câu trả lời
+      review: Đánh giá
+      word_lawyer: Giới thiệu
+      firm_info: Thông tin văn phòng luật
+      location: Vị trí văn phòng
+      phone_number: Số điện thoại
+      fax : FAX
+      reception_hours: Giờ làm việc
+    answers:
+      view_question: Xem câu hỏi

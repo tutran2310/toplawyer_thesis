@@ -1,0 +1,23 @@
+<% if vote.vote_up? %>
+  <%= form_for [:user, vote], html: { method: :delete, remote: true } do |f| %>
+    <%= f.hidden_field :vote_type %>
+    <%= f.hidden_field :voteable_type %>
+    <%= f.hidden_field :voteable_id %>
+    <%= f.button type: :submit, class: "icon_btn new_vote vote_btn" do %>
+      <i aria-hidden="true" class="fa fa-caret-up" style="font-size:48px"></i>
+    <% end %>
+  <% end %>
+  <h4><%= model.total_vote.to_i %></h4>
+  <i aria-hidden="true" class="fa fa-caret-down" style="font-size:48px; color: grey"></i>
+<% else %>
+  <i aria-hidden="true" class="fa fa-caret-up" style="font-size:48px; color: grey"></i>
+  <h4><%= model.total_vote.to_i %></h4>
+  <%= form_for [:user, vote], html: { method: :delete, remote: true } do |f| %>
+    <%= f.hidden_field :vote_type %>
+    <%= f.hidden_field :voteable_type %>
+    <%= f.hidden_field :voteable_id %>
+    <%= f.button type: :submit, class: "icon_btn new_vote vote_btn" do %>
+      <i aria-hidden="true" class="fa fa-caret-down" style="font-size:48px"></i>
+    <% end %>
+  <% end %>
+<% end %>

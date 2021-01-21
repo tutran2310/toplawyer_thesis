@@ -1,0 +1,17 @@
+<div class="col-md-9">
+  <div class="section-title al-center">
+    <h4><%= t ".edit_profile" %></h4>
+  </div>
+  <div class="section-body padding-arround">
+    <%= form_for [:lawyer, @account] do |f| %>
+    <%= render "shared/errors_list", object: @account %>
+    <%= render "shared/accounts/form", f: f, account: @account %>
+
+    <div class="form-group">
+      <%= f.submit t(".submit"), class: "form-control btn btn-primary" %>
+    </div>
+    <% end %>
+  </div>
+</div>
+<div class="col-md-3">
+</div>

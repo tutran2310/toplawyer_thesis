@@ -1,0 +1,42 @@
+<div class="col-md-9">
+  <div class="section-title al-center">
+    <h4><%= t ".buy_advertise" %></h4>
+  </div>
+
+  <div class="section-body padding-arround">
+    <%= form_for [:lawyer, :advertise, @history_advertise] do |f| %>
+      <%= render "shared/errors_list", object: @history_advertise %>
+
+      <div class="form-group">
+        <%= f.label t ".category" %>
+        <%= f.select :category_id, options_for_select(@categories), {}, {class: "form__input"} %>
+      </div>
+
+      <div class="form-group">
+        <% point = Point.advertise.first.point_per_time.to_i %>
+        <p><%= f.label t ".price" %>: <b><%= -point %> (<%= t ".point" %>)</b></p>
+      </div>
+
+      <div class="form-group">
+        <%= f.label t ".start_time" %>
+        <%= f.text_field :start_time, class: "form__input datetime-picker" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label t ".end_time" %>
+        <%= f.text_field :end_time, class: "form__input datetime-picker" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.submit t(".submit"), class: "form__btn" %>
+      </div>
+    <% end %>
+  </div>
+</div>
+<div class="col-md-3">
+  <%= render "shared/lawyer_profiles/lawyer_statistis", account: current_account %>
+</div>
+
+<script type="text/javascript">
+  <%= render "shared/datetime-picker.js" %>
+</script>

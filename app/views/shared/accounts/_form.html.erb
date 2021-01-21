@@ -1,0 +1,18 @@
+<div class="form-group">
+  <%= f.label t(".name") %>
+  <%= f.text_field :name, class: "form__input" %>
+</div>
+
+<div class="form-group">
+  <%= f.label t(".email") %>
+  <%= f.email_field :email, class: "form__input" %>
+</div>
+
+<div class="form-group upload-preview">
+  <%= image_tag current_account.account_avatar_url, size: "300x300" %>
+</div>
+
+<div class="form-group">
+  <%= f.label t(".avatar") %>
+  <%= f.file_field :avatar, class: "form__input" %>
+</div>

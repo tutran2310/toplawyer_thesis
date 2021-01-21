@@ -1,0 +1,17 @@
+<div class="grid no-margin">
+  <div class="">
+    <ul class="nav sub_navi" role="navigation">
+      <li class="nav__item">
+        <%= link_to t(".Questions"), user_questions_path %>
+      </li>
+      <li class="nav__item"><%= link_to t(".clips"), user_clips_path %></li>
+      <li class="nav__item"><%= link_to t(".follow_categories"), follows_follow_categories_path %></li>
+      <li class="nav__item"><%= link_to t(".account"), edit_user_account_path(current_account) %></li>
+      <% if current_account.can_register_lawyer %>
+        <li class="nav__item">
+          <%= link_to t(".register_lawyer"), new_user_register_lawyer_lawyer_profile_path %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

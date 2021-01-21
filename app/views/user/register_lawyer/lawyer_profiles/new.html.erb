@@ -1,0 +1,33 @@
+<div class="col-md-9">
+  <div class="section-title al-center">
+    <h4><%= t ".regis_lawyer" %></h4>
+  </div>
+  <div class="section-body padding-arround">
+    <%= form_for [:user, :register_lawyer, @lawyer_profile] do |f| %>
+      <%= render "shared/errors_list", object: @lawyer_profile %>
+      <%= render "shared/lawyer_profiles/form", f: f %>
+
+      <div class="form-group">
+        <%= f.label t(".lawyer_card_id") %>
+        <%= f.text_field :lawyer_id, class: "form__input" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label t(".lawyer_card_image") %>
+        <%= f.file_field :lawyer_card_image, class: "form__input" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label t(".id_card_image") %>
+        <%= f.file_field :id_card_image, class: "form__input" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.submit t(".submit"), class: "form__btn" %>
+      </div>
+    <% end %>
+  </div>
+</div>
+<div class="col-md-3">
+  <%= render "shared/users/user_statistic", account: current_account %>
+</div>

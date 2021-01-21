@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <%= render "layouts/shared/header" %>
+  <body>
+    <%= include_gon %>
+    <%= render "layouts/shared/navigation_bar" %>
+    <%= render "layouts/shared/cover" %>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <%= render("layouts/lawyers/lawyer_navigator") if current_account.Lawyer? %>
+        <%= render "layouts/shared/flash" %>
+        <div class="row">
+        </div>
+        <div class="row">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+    <%= render "layouts/shared/footer" %>
+  </body>
+</html>
